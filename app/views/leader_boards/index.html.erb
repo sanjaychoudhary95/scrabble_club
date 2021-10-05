@@ -1,0 +1,21 @@
+<h1>LeaderBoard</h1>
+<table  class="table">
+  <thead>
+    <tr>
+      <th>Player</th>
+      <th>No of Game</th>
+      <th>Aaverage Score</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @players.each do |player| %>
+      <tr>
+        <td><%= player.first_name %></td>
+        <td><%= player.participants_count %></td>
+        <td><%= player.average_score %></td>
+      </tr>
+    <%end%>
+  </tbody>
+</table>

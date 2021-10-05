@@ -1,0 +1,14 @@
+<div class="row form-group">
+  <%= f.label "player", class: "col-sm-2 col-form-label" %>
+  <div class="col-sm-10">
+    <%= f.collection_select(:player_id, Player.all, :id, :first_name, { :prompt => 'Select Player'}, { class: 'form-control' }) %>
+  </div>
+</div>
+<p></p>
+
+<div class="row form-group">
+  <%= f.label "player score", class: "col-sm-2 col-form-label" %>
+  <div class="col-sm-10">
+    <%= f.number_field :score %>
+  </div>
+</div>

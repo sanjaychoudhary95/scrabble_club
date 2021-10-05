@@ -1,0 +1,3 @@
+module LeaderBoardsHelper
+
+end
